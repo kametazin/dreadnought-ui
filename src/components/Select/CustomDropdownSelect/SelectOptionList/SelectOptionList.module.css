@@ -1,0 +1,16 @@
+.selectOptionList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 500;
+  flex-direction: column;
+  max-height: calc(var(--input-height) * 5.5);
+  overflow: auto;
+}
+
+.selectOptionList .listOption:last-child {
+  border-bottom-color: transparent;
+  border-radius: 0 0 2px 2px;
+}

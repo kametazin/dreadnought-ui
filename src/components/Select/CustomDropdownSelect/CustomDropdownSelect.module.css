@@ -1,0 +1,67 @@
+.selectContainer {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.selectArrow {
+  position: absolute;
+  font-size: 16px;
+  bottom: 6px;
+  right: 6px;
+  transition: transform 0.2s ease;
+}
+
+/* Professional label styling - consistent with Html5Select */
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.4;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+}
+
+.requiredStar {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.selectValue {
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.selectValue:hover {
+  border-color: #9ca3af;
+}
+
+.selectValue:focus-within {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.selectContainer.open .selectValue {
+  border-color: #3b82f6;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.selectContainer.open .selectArrow {
+  transform: rotate(180deg);
+}

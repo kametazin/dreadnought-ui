@@ -1,0 +1,13 @@
+.selectOption {
+  display: flex;
+  align-items: center;
+  background: var(--primary-color);
+  height: var(--input-height);
+  min-height: var(--input-height);
+  max-height: var(--input-height);
+  font-size: 14px;
+  padding-right: 32px;
+  padding-left: 12px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
