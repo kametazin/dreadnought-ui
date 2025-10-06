@@ -2,7 +2,7 @@
   "name": "dreadnought-ui",
   "version": "1.1.1",
   "description": "React component library with CSS Modules for scoped styling",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
@@ -12,7 +12,7 @@
   "exports": {
     ".": {
       "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs",
+      "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },
